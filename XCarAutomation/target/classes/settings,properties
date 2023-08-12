@@ -1,0 +1,13 @@
+url = http://127.0.0.1:4723/wd/hub
+deviceName = deviceName
+deviceNameT = samsung SM-A146P
+udid = udid
+udidT = R92W50N9Q8Z
+platformName = platformName
+platformNameT = Android
+platformVersion= platformVersion
+platformVersionT = 13
+appPackage = appPackage
+appPackageT = com.epicdeveloper.xcar
+appActivity = appActivity
+appActivityMain = com.epicdeveloper.xcar.MainActivity
