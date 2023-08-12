@@ -16,8 +16,8 @@ public class settings {
 	ResourceBundle rb = ResourceBundle.getBundle("settiings");
 	public String deviceName = rb.getString("deviceName");
 	public String deviceNameT = rb.getString("deviceNameT");
-	public String uid = rb.getString("uid");
-	public String uidT = rb.getString("uidT");
+	public String udid = rb.getString("udid");
+	public String udidT = rb.getString("udidT");
 	public String platformName = rb.getString("platformName");
 	public String platformNameT = rb.getString("platformNameT");
 	public String platformVersion = rb.getString("platformVersion");
@@ -26,18 +26,20 @@ public class settings {
 	public String appPackageT = rb.getString("appPackageT");
 	public String appActivity = rb.getString("appActivity");
 	public String appActivityMain = rb.getString("appActivityMain");
+	public String urlT = rb.getString("url");
+	
 
 
 	public void setup() {
 		try {
 			DesiredCapabilities cap = new DesiredCapabilities();
 			cap.setCapability(deviceName, deviceNameT);
-			cap.setCapability("udid","R92W50N9Q8Z");
-			cap.setCapability("platformName","Android");
-			cap.setCapability("platformVersion","13");
-			cap.setCapability("appPackage","com.epicdeveloper.xcar");
-			cap.setCapability("appActivity","com.epicdeveloper.xcar.MainActivity");
-			URL url = new URL("http://127.0.0.1:4723/wd/hub");
+			cap.setCapability(udid,udidT);
+			cap.setCapability(platformName,platformNameT);
+			cap.setCapability(platformVersion,platformVersionT);
+			cap.setCapability(appPackage,appPackageT);
+			cap.setCapability(appActivity,appActivityMain);
+			URL url = new URL(urlT);
 			driver = new AppiumDriver<MobileElement>(url, cap);
 		Thread.sleep(5000);
 		}catch (Exception e) {
