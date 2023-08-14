@@ -3,7 +3,6 @@ package appiumtest;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
@@ -12,8 +11,8 @@ import io.appium.java_client.MobileElement;
 
 public class settings {
 	public static String plateName;
-	static AppiumDriver driver;
-	ResourceBundle rb = ResourceBundle.getBundle("settiings");
+	public static AppiumDriver<MobileElement> driver;
+	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	public String deviceName = rb.getString("deviceName");
 	public String deviceNameT = rb.getString("deviceNameT");
 	public String udid = rb.getString("udid");
