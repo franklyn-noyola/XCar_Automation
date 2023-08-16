@@ -23,11 +23,10 @@ public class loginMain extends settings{
 	MobileElement password;
 	MobileElement loginButton;
 	
+	
 	@BeforeTest	
 	public void setup () {
 		setting.setup();
-		
-		
 	}
 
 	@Test
@@ -40,7 +39,7 @@ public class loginMain extends settings{
 				plateName.sendKeys(userLogin);
 				password.sendKeys(passwordLogin);
 				loginButton.click();
-				Thread.sleep(2000);
+				Thread.sleep(2000);		
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
