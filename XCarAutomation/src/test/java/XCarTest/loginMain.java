@@ -6,6 +6,10 @@ import org.testng.annotations.Test;
 import java.util.ResourceBundle;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
 import io.appium.java_client.AppiumDriver;
 //import appiumtest.mainActivity;
 import appiumtest.settings;
@@ -24,17 +28,22 @@ public class loginMain extends settings{
 	MobileElement loginButton;
 	
 	
+	
 	@BeforeTest	
 	public void setup () {
 		setting.setup();
 	}
-
-	@Test
-	public void loging() throws Exception {
-		driver = setting.driver;	
+	
+	public void setUpField() throws Exception {
+		driver = setting.driver;
 		plateName = driver.findElement(By.id(plateNameField));
 		password = driver.findElement(By.id(passwordField));
 		loginButton = driver.findElement(By.id(buttonLogin));
+	}
+
+	@Test
+	public void loging() throws Exception {
+		setUpField();
 		try {		
 				plateName.sendKeys(userLogin);
 				password.sendKeys(passwordLogin);

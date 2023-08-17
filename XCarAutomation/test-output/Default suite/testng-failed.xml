@@ -5,6 +5,7 @@
     <classes>
       <class name="XCarTest.loginMain">
         <methods>
+          <include name="setup"/>
           <include name="loging"/>
         </methods>
       </class> <!-- XCarTest.loginMain -->
