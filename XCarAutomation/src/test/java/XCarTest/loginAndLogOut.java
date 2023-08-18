@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
 import java.util.ResourceBundle;
-import java.util.concurrent.TimeUnit;
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import appiumtest.settings;
@@ -30,7 +28,6 @@ public class loginAndLogOut extends loginMain{
 	
 	@Test
 	public void logOut() throws Exception {
-		driver = setting.driver;
 		Thread.sleep(1000);
 		settingMenu = driver.findElement(By.xpath(settingMenuField));
 		
