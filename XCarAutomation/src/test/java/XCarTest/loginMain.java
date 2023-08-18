@@ -2,16 +2,9 @@ package XCarTest;
 
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
-
 import java.util.ResourceBundle;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.CacheLookup;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
-
 import io.appium.java_client.AppiumDriver;
-//import appiumtest.mainActivity;
 import appiumtest.settings;
 import io.appium.java_client.MobileElement;
 public class loginMain extends settings{
