@@ -1,139 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-18T10:51:09 CEST" name="Default suite" finished-at="2023-08-18T10:51:33 CEST" duration-ms="23645">
+  <suite started-at="2023-08-20T13:46:12 CEST" name="Default suite" finished-at="2023-08-20T13:46:43 CEST" duration-ms="31120">
     <groups>
     </groups>
-    <test started-at="2023-08-18T10:51:09 CEST" name="Default test" finished-at="2023-08-18T10:51:33 CEST" duration-ms="23645">
+    <test started-at="2023-08-20T13:46:12 CEST" name="Default test" finished-at="2023-08-20T13:46:43 CEST" duration-ms="31120">
       <class name="XCarTest.loginAndLogOut">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-18T10:51:09 CEST" name="setup" finished-at="2023-08-18T10:51:27 CEST" duration-ms="17897" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:12 CEST" name="setup" finished-at="2023-08-20T13:46:27 CEST" duration-ms="15124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-18T10:51:27 CEST" name="setUp" finished-at="2023-08-18T10:51:31 CEST" depends-on-methods="XCarTest.loginMain.setup" duration-ms="4383" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:27 CEST" name="setUp" finished-at="2023-08-20T13:46:32 CEST" depends-on-methods="XCarTest.loginMain.setup" duration-ms="4389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="logOut()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-18T10:51:31 CEST" name="logOut" finished-at="2023-08-18T10:51:32 CEST" duration-ms="1021" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "io.appium.java_client.AppiumDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.AppiumDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at XCarTest.loginAndLogOut.logOut(loginAndLogOut.java:32)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="logOut()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:32 CEST" name="logOut" finished-at="2023-08-20T13:46:39 CEST" duration-ms="7203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method signature="loging()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-18T10:51:32 CEST" name="loging" finished-at="2023-08-18T10:51:33 CEST" duration-ms="279" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-L12O5CF', ip: '192.168.220.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {appActivity: com.epicdeveloper.xcar.Main..., appPackage: com.epicdeveloper.xcar, databaseEnabled: false, desired: {appActivity: com.epicdeveloper.xcar.Main..., appPackage: com.epicdeveloper.xcar, deviceName: samsung SM-A146P, platformName: android, platformVersion: 13, udid: R92W50N9Q8Z}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-A146P, deviceName: R92W50N9Q8Z, deviceScreenDensity: 450, deviceScreenSize: 1080x2408, deviceUDID: R92W50N9Q8Z, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 64, takesScreenshot: true, udid: R92W50N9Q8Z, viewportRect: {height: 2144, left: 0, top: 64, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 56bef1ee-ae9c-499d-b032-d55ffdc38b89
-*** Element info: {Using=id, value=com.epicdeveloper.xcar:id/name_user}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-L12O5CF', ip: '192.168.220.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {appActivity: com.epicdeveloper.xcar.Main..., appPackage: com.epicdeveloper.xcar, databaseEnabled: false, desired: {appActivity: com.epicdeveloper.xcar.Main..., appPackage: com.epicdeveloper.xcar, deviceName: samsung SM-A146P, platformName: android, platformVersion: 13, udid: R92W50N9Q8Z}, deviceApiLevel: 33, deviceManufacturer: samsung, deviceModel: SM-A146P, deviceName: R92W50N9Q8Z, deviceScreenDensity: 450, deviceScreenSize: 1080x2408, deviceUDID: R92W50N9Q8Z, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.8125, platform: LINUX, platformName: Android, platformVersion: 13, statBarHeight: 64, takesScreenshot: true, udid: R92W50N9Q8Z, viewportRect: {height: 2144, left: 0, top: 64, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 56bef1ee-ae9c-499d-b032-d55ffdc38b89
-*** Element info: {Using=id, value=com.epicdeveloper.xcar:id/name_user}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at XCarTest.loginMain.setUpField(loginMain.java:39)
-at XCarTest.loginMain.loging(loginMain.java:46)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:848)
-at org.testng.TestRunner.run(TestRunner.java:621)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-at org.testng.TestNG.runSuites(TestNG.java:1114)
-at org.testng.TestNG.run(TestNG.java:1082)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="loging()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:39 CEST" name="loging" finished-at="2023-08-20T13:46:43 CEST" duration-ms="4352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loging -->

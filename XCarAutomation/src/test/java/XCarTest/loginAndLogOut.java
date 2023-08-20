@@ -29,8 +29,8 @@ public class loginAndLogOut extends loginMain{
 	@Test
 	public void logOut() throws Exception {
 		Thread.sleep(1000);
+		driver = setting.driver;
 		settingMenu = driver.findElement(By.xpath(settingMenuField));
-		
 		try {
 			
 			settingMenu.click();
