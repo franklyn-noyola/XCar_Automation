@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-20T13:46:12 CEST" name="Default suite" finished-at="2023-08-20T13:46:43 CEST" duration-ms="31120">
+  <suite started-at="2023-08-27T19:25:08 CEST" name="Default suite" finished-at="2023-08-27T19:25:40 CEST" duration-ms="31168">
     <groups>
     </groups>
-    <test started-at="2023-08-20T13:46:12 CEST" name="Default test" finished-at="2023-08-20T13:46:43 CEST" duration-ms="31120">
-      <class name="XCarTest.loginAndLogOut">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:12 CEST" name="setup" finished-at="2023-08-20T13:46:27 CEST" duration-ms="15124" status="PASS">
+    <test started-at="2023-08-27T19:25:08 CEST" name="Default test" finished-at="2023-08-27T19:25:40 CEST" duration-ms="31168">
+      <class name="XCarTest.searchPlateNotifications">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.searchPlateNotifications@6221a451]" started-at="2023-08-27T19:25:09 CEST" name="setup" finished-at="2023-08-27T19:25:25 CEST" duration-ms="16628" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:27 CEST" name="setUp" finished-at="2023-08-20T13:46:32 CEST" depends-on-methods="XCarTest.loginMain.setup" duration-ms="4389" status="PASS">
+        <test-method signature="searchPlate()[pri:0, instance:XCarTest.searchPlateNotifications@6221a451]" started-at="2023-08-27T19:25:25 CEST" name="searchPlate" finished-at="2023-08-27T19:25:39 CEST" duration-ms="14007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="logOut()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:32 CEST" name="logOut" finished-at="2023-08-20T13:46:39 CEST" duration-ms="7203" status="PASS">
+        </test-method> <!-- searchPlate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.searchPlateNotifications@6221a451]" started-at="2023-08-27T19:25:39 CEST" name="tearDown" finished-at="2023-08-27T19:25:40 CEST" duration-ms="470" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method signature="loging()[pri:0, instance:XCarTest.loginAndLogOut@1ffaf86]" started-at="2023-08-20T13:46:39 CEST" name="loging" finished-at="2023-08-20T13:46:43 CEST" duration-ms="4352" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loging -->
-      </class> <!-- XCarTest.loginAndLogOut -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- XCarTest.searchPlateNotifications -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

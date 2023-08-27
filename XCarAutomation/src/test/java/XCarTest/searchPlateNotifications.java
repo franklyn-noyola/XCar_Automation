@@ -1,7 +1,10 @@
 package XCarTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.testng.annotations.*;
+
+import com.google.common.collect.ImmutableMap;
 
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
@@ -9,13 +12,12 @@ import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
-public class loginAndLogOut extends settings{
+public class searchPlateNotifications extends settings{
 	AppiumDriver<MobileElement> driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
-	String settingMenuField = rb.getString("settingMenu");
-	String logOutButton = rb.getString("logoutOption");
-	String buttonOK = rb.getString("OKButton");
+	String searchField = rb.getString("searchField");
+	String notificationsButton = rb.getString("notificationsButton");
 	String plateNameField = rb.getString("plateNameField");
 	String passwordField = rb.getString("passwordField");
 	String buttonLogin = rb.getString("buttonLogin");
@@ -24,9 +26,8 @@ public class loginAndLogOut extends settings{
 	MobileElement plateName;
 	MobileElement password;
 	MobileElement loginButton;
-	MobileElement settingMenu;
-	MobileElement logOutOption;
-	MobileElement OKButton;
+	MobileElement searchFieldButton;
+	MobileElement sendNotification;
 	
 	@BeforeTest	
 	public void setup () {
@@ -54,21 +55,20 @@ public class loginAndLogOut extends settings{
 	}
 	
 	@Test
-	public void logOut() throws Exception {
+	public void searchPlate() throws Exception {
 		loging();
 		Thread.sleep(1000);
 		driver = setting.driver;
-		settingMenu = driver.findElement(By.xpath(settingMenuField));
+		searchFieldButton = driver.findElement(By.id(searchField));
 		try {
-			
-			settingMenu.click();
+			searchFieldButton.click();
+			searchFieldButton.sendKeys("9876jcx");
 			Thread.sleep(1000);
-			logOutOption = driver.findElement(By.xpath(logOutButton));
-			logOutOption.click();
+			driver.executeScript("mobile: performEditorAction", ImmutableMap.of("action", "search"));
 			Thread.sleep(1000);
-			OKButton = driver.findElement(By.id(buttonOK));
-			OKButton.click();
-			Thread.sleep(2000);			
+			sendNotification = driver.findElement(By.id(notificationsButton));
+			sendNotification.click();
+			Thread.sleep(3000);			
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -79,6 +79,5 @@ public class loginAndLogOut extends settings{
 	public void tearDown() {
 		driver.quit();
 	}
-	
 	
 }

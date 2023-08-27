@@ -9,13 +9,12 @@ import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
-public class loginAndLogOut extends settings{
+public class howitWorks extends settings{
 	AppiumDriver<MobileElement> driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String settingMenuField = rb.getString("settingMenu");
-	String logOutButton = rb.getString("logoutOption");
-	String buttonOK = rb.getString("OKButton");
+	String howitworks = rb.getString("howitworks");
 	String plateNameField = rb.getString("plateNameField");
 	String passwordField = rb.getString("passwordField");
 	String buttonLogin = rb.getString("buttonLogin");
@@ -25,8 +24,7 @@ public class loginAndLogOut extends settings{
 	MobileElement password;
 	MobileElement loginButton;
 	MobileElement settingMenu;
-	MobileElement logOutOption;
-	MobileElement OKButton;
+	MobileElement howitwork;
 	
 	@BeforeTest	
 	public void setup () {
@@ -54,7 +52,7 @@ public class loginAndLogOut extends settings{
 	}
 	
 	@Test
-	public void logOut() throws Exception {
+	public void howitworks() throws Exception {
 		loging();
 		Thread.sleep(1000);
 		driver = setting.driver;
@@ -63,11 +61,8 @@ public class loginAndLogOut extends settings{
 			
 			settingMenu.click();
 			Thread.sleep(1000);
-			logOutOption = driver.findElement(By.xpath(logOutButton));
-			logOutOption.click();
-			Thread.sleep(1000);
-			OKButton = driver.findElement(By.id(buttonOK));
-			OKButton.click();
+			howitwork = driver.findElement(By.xpath(howitworks));
+			howitwork.click();
 			Thread.sleep(2000);			
 		}catch (Exception e) {
 			e.printStackTrace();
@@ -79,6 +74,5 @@ public class loginAndLogOut extends settings{
 	public void tearDown() {
 		driver.quit();
 	}
-	
 	
 }
