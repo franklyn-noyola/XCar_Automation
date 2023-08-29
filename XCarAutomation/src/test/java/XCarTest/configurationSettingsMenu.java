@@ -43,7 +43,6 @@ public class configurationSettingsMenu extends settings{
 	MobileElement plateName;
 	MobileElement password;
 	MobileElement loginButton;
-	
 	MobileElement settingMenu;
 	MobileElement settingSectionOption;
 	MobileElement selectedLanguage;
@@ -52,6 +51,7 @@ public class configurationSettingsMenu extends settings{
 	@BeforeTest
 	public void setUp() throws Exception {
 		Random random = new Random();
+		
 		optionSelected = selectedOption[random.nextInt(selectedOption.length)];
 		setting.setup();
 	}
@@ -81,7 +81,6 @@ public class configurationSettingsMenu extends settings{
 		loging();
 		Thread.sleep(1000);
 		driver = setting.driver;
-		System.out.println(optionSelected);
 		settingMenu = driver.findElement(By.xpath(settingMenuField));
 		try {
 			settingMenu.click();
