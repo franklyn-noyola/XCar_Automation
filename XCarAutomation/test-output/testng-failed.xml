@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="XCarTest.chatListSelection">
+      <class name="XCarTest.searchPlateChat">
         <methods>
-          <include name="chatList"/>
-          <include name="setup"/>
+          <include name="searchPlate"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- XCarTest.chatListSelection -->
+      </class> <!-- XCarTest.searchPlateChat -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

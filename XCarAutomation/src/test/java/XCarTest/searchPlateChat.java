@@ -18,16 +18,21 @@ public class searchPlateChat extends settings{
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String searchField = rb.getString("searchField");
 	String gotoChat = rb.getString("gotoChat");
+	String chatBox = rb.getString("chatBox");
+	String sendButton = rb.getString("sendButton");
 	String plateNameField = rb.getString("plateNameField");
 	String passwordField = rb.getString("passwordField");
 	String buttonLogin = rb.getString("buttonLogin");
 	String userLogin = rb.getString("userLogin");
+	String allowButton = rb.getString("allowButton");
 	String passwordLogin = rb.getString("passwordLogin");
 	MobileElement plateName;
 	MobileElement password;
 	MobileElement loginButton;
 	MobileElement searchFieldButton;
 	MobileElement gotoChatButton;
+	MobileElement boxChat;
+	MobileElement buttonSend;
 	
 	@BeforeTest	
 	public void setup () {
@@ -68,7 +73,18 @@ public class searchPlateChat extends settings{
 			Thread.sleep(1000);
 			gotoChatButton = driver.findElement(By.id(gotoChat));
 			gotoChatButton.click();
-			Thread.sleep(3000);			
+			Thread.sleep(1000);
+			if (driver.findElement(By.id(allowButton)) != null) {
+				driver.findElement(By.id(allowButton)).click();
+				Thread.sleep(1000);
+			}
+			boxChat = driver.findElement(By.id(chatBox));
+			boxChat.click();
+			boxChat.sendKeys("Esto fue en viado por un script de automatización por el campo de búsqueda de matricula desde la pagina de inicio");
+			Thread.sleep(1000);
+			buttonSend = driver.findElement(By.id(sendButton));
+			buttonSend.click();
+			Thread.sleep(3000);	
 		}catch (Exception e) {
 			e.printStackTrace();
 		}

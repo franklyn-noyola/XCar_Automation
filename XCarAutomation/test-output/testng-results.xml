@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-29T15:55:50 CEST" name="Default suite" finished-at="2023-08-29T15:56:26 CEST" duration-ms="35487">
+  <suite started-at="2023-08-29T16:14:29 CEST" name="Default suite" finished-at="2023-08-29T16:15:10 CEST" duration-ms="40450">
     <groups>
     </groups>
-    <test started-at="2023-08-29T15:55:50 CEST" name="Default test" finished-at="2023-08-29T15:56:26 CEST" duration-ms="35487">
-      <class name="XCarTest.sendNotifications">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.sendNotifications@6221a451]" started-at="2023-08-29T15:55:50 CEST" name="setup" finished-at="2023-08-29T15:56:07 CEST" duration-ms="16661" status="PASS">
+    <test started-at="2023-08-29T16:14:29 CEST" name="Default test" finished-at="2023-08-29T16:15:10 CEST" duration-ms="40450">
+      <class name="XCarTest.searchPlateChat">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.searchPlateChat@6221a451]" started-at="2023-08-29T16:14:29 CEST" name="setup" finished-at="2023-08-29T16:14:50 CEST" duration-ms="20583" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="sendNotification()[pri:0, instance:XCarTest.sendNotifications@6221a451]" started-at="2023-08-29T15:56:07 CEST" name="sendNotification" finished-at="2023-08-29T15:56:25 CEST" duration-ms="18204" status="PASS">
+        <test-method signature="searchPlate()[pri:0, instance:XCarTest.searchPlateChat@6221a451]" started-at="2023-08-29T16:14:50 CEST" name="searchPlate" finished-at="2023-08-29T16:15:09 CEST" duration-ms="19246" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendNotification -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.sendNotifications@6221a451]" started-at="2023-08-29T15:56:25 CEST" name="tearDown" finished-at="2023-08-29T15:56:26 CEST" duration-ms="546" status="PASS">
+        </test-method> <!-- searchPlate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.searchPlateChat@6221a451]" started-at="2023-08-29T16:15:09 CEST" name="tearDown" finished-at="2023-08-29T16:15:10 CEST" duration-ms="545" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- XCarTest.sendNotifications -->
+      </class> <!-- XCarTest.searchPlateChat -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
