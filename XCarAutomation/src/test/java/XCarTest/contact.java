@@ -68,7 +68,7 @@ public class contact extends settings{
 	}
 	
 	@Test
-	public void howitworks() throws Exception {
+	public void contacts() throws Exception {
 		loging();
 		Thread.sleep(1000);
 		driver = setting.driver;
