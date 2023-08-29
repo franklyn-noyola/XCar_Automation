@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-29T12:19:16 CEST" name="Default suite" finished-at="2023-08-29T12:19:53 CEST" duration-ms="36961">
+  <suite started-at="2023-08-29T14:49:29 CEST" name="Default suite" finished-at="2023-08-29T14:50:00 CEST" duration-ms="31611">
     <groups>
     </groups>
-    <test started-at="2023-08-29T12:19:16 CEST" name="Default test" finished-at="2023-08-29T12:19:53 CEST" duration-ms="36961">
-      <class name="XCarTest.chatListSelection">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.chatListSelection@6221a451]" started-at="2023-08-29T12:19:16 CEST" name="setup" finished-at="2023-08-29T12:19:32 CEST" duration-ms="15260" status="PASS">
+    <test started-at="2023-08-29T14:49:29 CEST" name="Default test" finished-at="2023-08-29T14:50:00 CEST" duration-ms="31611">
+      <class name="XCarTest.receivdeNotificationsReply">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.receivdeNotificationsReply@6221a451]" started-at="2023-08-29T14:49:29 CEST" name="setup" finished-at="2023-08-29T14:49:43 CEST" duration-ms="14175" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="chatList()[pri:0, instance:XCarTest.chatListSelection@6221a451]" started-at="2023-08-29T12:19:32 CEST" name="chatList" finished-at="2023-08-29T12:19:53 CEST" duration-ms="21171" status="PASS">
+        <test-method signature="notiReply()[pri:0, instance:XCarTest.receivdeNotificationsReply@6221a451]" started-at="2023-08-29T14:49:43 CEST" name="notiReply" finished-at="2023-08-29T14:50:00 CEST" duration-ms="16862" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chatList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.chatListSelection@6221a451]" started-at="2023-08-29T12:19:53 CEST" name="tearDown" finished-at="2023-08-29T12:19:53 CEST" duration-ms="468" status="PASS">
+        </test-method> <!-- notiReply -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.receivdeNotificationsReply@6221a451]" started-at="2023-08-29T14:50:00 CEST" name="tearDown" finished-at="2023-08-29T14:50:00 CEST" duration-ms="517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- XCarTest.chatListSelection -->
+      </class> <!-- XCarTest.receivdeNotificationsReply -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
