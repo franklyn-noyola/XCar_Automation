@@ -1,17 +1,17 @@
 package XCarTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import java.util.Random;
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
 public class sendNotifications extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String notiIcon = rb.getString("notiIcon");
@@ -33,16 +33,16 @@ public class sendNotifications extends settings{
 	String passwordLogin = rb.getString("passwordLogin");
 	String selectedOption;
 	String [] optionsSelected = {subjectOption1, subjectOption2, subjectOption3, subjectOption4, subjectOption5, subjectOption6};
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement sendNotiFab;
-	MobileElement iconNoti;
-	MobileElement userTarget;
-	MobileElement optionSelect;
-	MobileElement boxMessage;
-	MobileElement selectList;
-	MobileElement buttonSend;
+	WebElement plateName;
+	WebElement  password;
+	WebElement  loginButton;
+	WebElement  sendNotiFab;
+	WebElement  iconNoti;
+	WebElement  userTarget;
+	WebElement  optionSelect;
+	WebElement  boxMessage;
+	WebElement  selectList;
+	WebElement  buttonSend;
 	
 	
 	@BeforeTest	

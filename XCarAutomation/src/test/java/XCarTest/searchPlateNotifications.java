@@ -5,16 +5,16 @@ import org.openqa.selenium.Keys;
 import org.testng.annotations.*;
 
 import com.google.common.collect.ImmutableMap;
-
 import java.util.Random;
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
+import org.openqa.selenium.WebElement;
+
 
 
 public class searchPlateNotifications extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String searchField = rb.getString("searchField");
@@ -35,15 +35,15 @@ public class searchPlateNotifications extends settings{
 	String subjectOption6 = rb.getString("subjectOption6");
 	String selectedOption;
 	String [] optionsSelected = {subjectOption1, subjectOption2, subjectOption3, subjectOption4, subjectOption5, subjectOption6};
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement searchFieldButton;
-	MobileElement sendNotification;
-	MobileElement selectList;
-	MobileElement optionSelect;
-	MobileElement boxMessage;
-	MobileElement buttonSend;
+	WebElement plateName;
+	WebElement password;
+	WebElement loginButton;
+	WebElement searchFieldButton;
+	WebElement sendNotification;
+	WebElement selectList;
+	WebElement optionSelect;
+	WebElement boxMessage;
+	WebElement buttonSend;
 	
 	@BeforeTest	
 	public void setup () {

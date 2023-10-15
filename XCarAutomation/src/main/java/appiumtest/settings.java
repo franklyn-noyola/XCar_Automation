@@ -1,17 +1,17 @@
 package appiumtest;
 
+import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 
 
 public class settings {
 	public static String plateName;
-	public static AppiumDriver<MobileElement> driver;
+	public AppiumDriver driver;
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	public String deviceName = rb.getString("deviceName");
 	public String deviceNameT = rb.getString("deviceNameT");
@@ -32,14 +32,17 @@ public class settings {
 	public void setup() {
 		try {
 			DesiredCapabilities cap = new DesiredCapabilities();
+			//File appDir = new File("C:\\Users\\franklyn.noyola\\StudioProjects\\xcar\\app\\build\\outputs\\apk\\debug");
+			//File app = new File(appDir, "xcar.apk");    
 			cap.setCapability(deviceName, deviceNameT);
 			cap.setCapability(udid,udidT);
 			cap.setCapability(platformName,platformNameT);
 			cap.setCapability(platformVersion,platformVersionT);
 			cap.setCapability(appPackage,appPackageT);
+			//cap.setCapability("app", app.getAbsolutePath());
 			cap.setCapability(appActivity,appActivityMain);
 			URL url = new URL(urlT);
-			driver = new AppiumDriver<MobileElement>(url, cap);
+			driver = new AppiumDriver(url, cap);
 		Thread.sleep(5000);
 		}catch (Exception e) {
 			System.out.println(e.getCause());

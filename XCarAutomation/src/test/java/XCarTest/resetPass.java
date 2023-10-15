@@ -4,23 +4,24 @@ import org.testng.annotations.*;
 import org.testng.annotations.Test;
 import java.util.ResourceBundle;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 import io.appium.java_client.AppiumDriver;
 import appiumtest.settings;
-import io.appium.java_client.MobileElement;
 
 public class resetPass extends loginMain{
 	settings setting = new settings();
-	static AppiumDriver<MobileElement> driver;
+	static AppiumDriver driver;
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String forgottenPassLink = rb.getString("forgottenPassLink");
 	String resetButton = rb.getString("resetButton");
 	String plateNumberReset = rb.getString("plateNumberReset");
 	String emailReset = rb.getString("emailReset");
 	String passwordLogin = rb.getString("passwordLogin");
-	MobileElement forgottenPass;
-	MobileElement buttonReset;
-	MobileElement resetplateNumber;
-	MobileElement resetEmail;
+	WebElement forgottenPass;
+	WebElement buttonReset;
+	WebElement resetplateNumber;
+	WebElement resetEmail;
 	
 	
 	

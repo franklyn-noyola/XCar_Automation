@@ -2,28 +2,33 @@ package XCarTest;
 
 import org.testng.annotations.*;
 import org.testng.annotations.Test;
+
+import java.net.URL;
 import java.util.ResourceBundle;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+
 import io.appium.java_client.AppiumDriver;
 import appiumtest.settings;
-import io.appium.java_client.MobileElement;
+
 public class loginMain extends settings{
 	settings setting = new settings();
-	static AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String plateNameField = rb.getString("plateNameField");
 	String passwordField = rb.getString("passwordField");
 	String buttonLogin = rb.getString("buttonLogin");
 	String userLogin = rb.getString("userLogin");
 	String passwordLogin = rb.getString("passwordLogin");
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
+	WebElement plateName;
+	WebElement  password;
+	WebElement  loginButton;	
 	
 	
 	
 	@BeforeTest	
-	public void setup () {
+	public void setup() {
 		setting.setup();
 	}
 	
