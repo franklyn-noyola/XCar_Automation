@@ -2,6 +2,7 @@ package XCarTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import com.google.common.collect.ImmutableMap;
@@ -9,12 +10,11 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Random;
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
 public class receivedNotificationsDelete extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String notiList = rb.getString("notiList");
@@ -26,12 +26,12 @@ public class receivedNotificationsDelete extends settings{
 	String buttonLogin = rb.getString("buttonLogin");
 	String userLogin = rb.getString("userLogin");
 	String passwordLogin = rb.getString("passwordLogin");
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement notiSectionIcon;
-	MobileElement buttonOK;	
-	MobileElement deleteButton;
+	WebElement plateName;
+	WebElement password;
+	WebElement loginButton;
+	WebElement notiSectionIcon;
+	WebElement buttonOK;	
+	WebElement deleteButton;
 	
 	@BeforeTest	
 	public void setup () {

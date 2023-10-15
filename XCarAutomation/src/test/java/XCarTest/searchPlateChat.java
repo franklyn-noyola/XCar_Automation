@@ -2,18 +2,18 @@ package XCarTest;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import com.google.common.collect.ImmutableMap;
 
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
 public class searchPlateChat extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String searchField = rb.getString("searchField");
@@ -26,13 +26,13 @@ public class searchPlateChat extends settings{
 	String userLogin = rb.getString("userLogin");
 	String allowButton = rb.getString("allowButton");
 	String passwordLogin = rb.getString("passwordLogin");
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement searchFieldButton;
-	MobileElement gotoChatButton;
-	MobileElement boxChat;
-	MobileElement buttonSend;
+	WebElement plateName;
+	WebElement password;
+	WebElement loginButton;
+	WebElement searchFieldButton;
+	WebElement gotoChatButton;
+	WebElement boxChat;
+	WebElement buttonSend;
 	
 	@BeforeTest	
 	public void setup () {

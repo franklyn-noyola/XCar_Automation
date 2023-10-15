@@ -1,16 +1,16 @@
 package XCarTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 import java.util.Random;
 
 public class configurationSettingsMenu extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	loginMain login = new loginMain();
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
@@ -40,13 +40,13 @@ public class configurationSettingsMenu extends settings{
 	String buttonLogin = rb.getString("buttonLogin");
 	String userLogin = rb.getString("userLogin");
 	String passwordLogin = rb.getString("passwordLogin");
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement settingMenu;
-	MobileElement settingSectionOption;
-	MobileElement selectedLanguage;
-	MobileElement changeLanButton;
+	WebElement plateName;
+	WebElement password;
+	WebElement loginButton;
+	WebElement settingMenu;
+	WebElement settingSectionOption;
+	WebElement selectedLanguage;
+	WebElement changeLanButton;
 	
 	@BeforeTest
 	public void setUp() throws Exception {

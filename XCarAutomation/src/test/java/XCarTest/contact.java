@@ -1,17 +1,17 @@
 package XCarTest;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.*;
 
 import java.util.Random;
 import java.util.ResourceBundle;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import appiumtest.settings;
 
 
 public class contact extends settings{
-	AppiumDriver<MobileElement> driver;
+	AppiumDriver driver;
 	settings setting = new settings();
 	ResourceBundle rb = ResourceBundle.getBundle("settings");
 	String settingMenuField = rb.getString("settingMenu");
@@ -29,15 +29,15 @@ public class contact extends settings{
 	String passwordLogin = rb.getString("passwordLogin");
 	String selectedOption;
 	String [] optionsSelected = {subjectOption1, subjectOption2, subjectOption3};
-	MobileElement plateName;
-	MobileElement password;
-	MobileElement loginButton;
-	MobileElement settingMenu;
-	MobileElement contactField;
-	MobileElement optionSelect;
-	MobileElement boxMessage;
-	MobileElement selectList;
-	MobileElement buttonSend;
+	WebElement plateName;
+	WebElement password;
+	WebElement loginButton;
+	WebElement settingMenu;
+	WebElement contactField;
+	WebElement optionSelect;
+	WebElement boxMessage;
+	WebElement selectList;
+	WebElement buttonSend;
 	
 	
 	@BeforeTest	
