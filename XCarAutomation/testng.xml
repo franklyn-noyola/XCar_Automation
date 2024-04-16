@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Xcar Test Automation">
+    <test name="Login Page">
+         <classes>
+             <class name="XCarTest.loginMain"/>
+          </classes>
+     </test> <!-- Test -->	 
+</suite> <!-- Suite -->
