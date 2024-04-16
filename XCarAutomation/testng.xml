@@ -6,4 +6,9 @@
              <class name="XCarTest.loginMain"/>
           </classes>
      </test> <!-- Test -->	 
+	 <test name="Login and Out">
+         <classes>
+             <class name="XCarTest.loginAndLogOut"/>
+          </classes>
+     </test> <!-- Test -->	 
 </suite> <!-- Suite -->
