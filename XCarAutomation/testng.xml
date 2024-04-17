@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Xcar Test Automation">
+	<parameter name="deviceName" value="Redmi 13C" />
+	<parameter name="udid" value="192.168.1.138:5565" />
+	<parameter name="platformVersion" value="13" />
+	<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
     <test name="Login Page">
          <classes>
              <class name="XCarTest.loginMain"/>
@@ -9,6 +13,11 @@
 	 <test name="Login and Out">
          <classes>
              <class name="XCarTest.loginAndLogOut"/>
+          </classes>
+     </test> <!-- Test -->
+     <test name="How It Works">
+         <classes>
+             <class name="XCarTest.howitWorks"/>
           </classes>
      </test> <!-- Test -->	 
 </suite> <!-- Suite -->
