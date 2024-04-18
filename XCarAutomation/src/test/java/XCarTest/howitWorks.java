@@ -58,7 +58,7 @@ public class howitWorks extends settings{
 		driver = setting.driver;
 		settingMenu = driver.findElement(By.xpath(settingMenuField));
 		try {
-			
+			Thread.sleep(2000);	
 			settingMenu.click();
 			Thread.sleep(1000);
 			howitwork = driver.findElement(By.xpath(howitworks));
