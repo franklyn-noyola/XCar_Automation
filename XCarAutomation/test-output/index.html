@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Xcar_Test_Automation" class="navigator-link">
-              <span class="suite-name border-passed">Xcar Test Automation</span>
+              <span class="suite-name border-failed">Xcar Test Automation</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Xcar_Test_Automation" class="hide-methods failed suite-Xcar_Test_Automation"> (hide)</a> <!-- hide-methods failed suite-Xcar_Test_Automation -->
+                      <a href="#" panel-name="suite-Xcar_Test_Automation" class="show-methods failed suite-Xcar_Test_Automation"> (show)</a> <!-- show-methods failed suite-Xcar_Test_Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-Xcar_Test_Automation">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Xcar_Test_Automation" title="XCarTest.howitWorks" class="method navigator-link" hash-for-method="howitworks">howitworks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Xcar_Test_Automation -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +115,6 @@
                       <a href="#" panel-name="suite-Xcar_Test_Automation" class="show-methods passed suite-Xcar_Test_Automation"> (show)</a> <!-- show-methods passed suite-Xcar_Test_Automation -->
                     </span>
                     <div class="method-list-content passed suite-Xcar_Test_Automation">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Xcar_Test_Automation" title="XCarTest.howitWorks" class="method navigator-link" hash-for-method="howitworks">howitworks</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Xcar_Test_Automation" title="XCarTest.loginAndLogOut" class="method navigator-link" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
@@ -128,9 +137,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Xcar_Test_Automation" class="panel Xcar_Test_Automation">
-          <div class="suite-Xcar_Test_Automation-class-passed">
+          <div class="suite-Xcar_Test_Automation-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">XCarTest.howitWorks</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -139,10 +148,32 @@
                   <a name="howitworks">
                   </a> <!-- howitworks -->
                   <span class="method-name">howitworks</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: io.appium.java_client.AppiumDriver
+Command: [fec08240-0317-4e86-aecd-8cafd7a0612e, findElement {using=xpath, value=//android.widget.ImageView[@content-desc=&quot;Más opciones&quot;]}]
+Capabilities {appium:appActivity: com.epicdeveloper.xcar.Main..., appium:appPackage: com.epicdeveloper.xcar, appium:databaseEnabled: false, appium:desired: {appActivity: com.epicdeveloper.xcar.Main..., appPackage: com.epicdeveloper.xcar, deviceName: Redmi 13C, platformName: ANDROID, platformVersion: 13, udid: 192.168.1.138:5565}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Xiaomi, appium:deviceModel: 23108RN04Y, appium:deviceName: 192.168.1.138:5565, appium:deviceScreenDensity: 320, appium:deviceScreenSize: 720x1600, appium:deviceUDID: 192.168.1.138:5565, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2, appium:platformVersion: 13, appium:statBarHeight: 68, appium:takesScreenshot: true, appium:udid: 192.168.1.138:5565, appium:viewportRect: {height: 1370, left: 0, top: 68, width: 720}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: fec08240-0317-4e86-aecd-8cafd7a0612e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at XCarTest.howitWorks.howitworks(howitWorks.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Xcar_Test_Automation-class-passed -->
+          </div> <!-- suite-Xcar_Test_Automation-class-failed -->
           <div class="suite-Xcar_Test_Automation-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -247,22 +278,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'howitworks')
-data.setCell(0, 2, 'XCarTest.howitWorks')
-data.setCell(0, 3, 13931);
+data.setCell(0, 1, 'logOut')
+data.setCell(0, 2, 'XCarTest.loginAndLogOut')
+data.setCell(0, 3, 13379);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'logOut')
-data.setCell(1, 2, 'XCarTest.loginAndLogOut')
-data.setCell(1, 3, 12266);
+data.setCell(1, 1, 'howitworks')
+data.setCell(1, 2, 'XCarTest.howitWorks')
+data.setCell(1, 3, 7235);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loging')
 data.setCell(2, 2, 'XCarTest.loginMain')
-data.setCell(2, 3, 4379);
+data.setCell(2, 3, 4637);
 window.suiteTableData['Xcar_Test_Automation']= { tableData: data, tableDiv: 'times-div-Xcar_Test_Automation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Xcar_Test_Automation">
               </div> <!-- times-div-Xcar_Test_Automation -->
             </div> <!-- times-div -->
@@ -295,37 +326,39 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">loging</span>
-                <span class="method-start">21634 ms</span>
+                <span class="method-start">18688 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">XCarTest.loginAndLogOut</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">26085 ms</span>
+                <span class="method-start">23406 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">logOut</span>
-                <span class="method-start">43547 ms</span>
+                <span class="method-start">42485 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">55815 ms</span>
+                <span class="method-start">55869 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">XCarTest.howitWorks</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">56488 ms</span>
+                <span class="method-start">56871 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">howitworks</span>
-                <span class="method-start">72120 ms</span>
+                <span class="method-start">75239 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">86054 ms</span>
+                <span class="method-start">82488 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
