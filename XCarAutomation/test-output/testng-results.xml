@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-17T16:15:44 CEST" name="Xcar Test Automation" finished-at="2024-04-17T16:17:19 CEST" duration-ms="95366">
+  <suite started-at="2024-04-18T15:40:53 CEST" name="Xcar Test Automation" finished-at="2024-04-18T15:42:16 CEST" duration-ms="82681">
     <groups>
     </groups>
-    <test started-at="2024-04-17T16:15:44 CEST" name="Login Page" finished-at="2024-04-17T16:16:12 CEST" duration-ms="28338">
+    <test started-at="2024-04-18T15:40:53 CEST" name="Login Page" finished-at="2024-04-18T15:41:16 CEST" duration-ms="22574">
       <class name="XCarTest.loginMain">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginMain@6440112d]" started-at="2024-04-17T16:15:44 CEST" name="setup" finished-at="2024-04-17T16:16:08 CEST" duration-ms="24226" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginMain@6440112d]" started-at="2024-04-18T15:40:53 CEST" name="setup" finished-at="2024-04-18T15:41:12 CEST" duration-ms="18108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loging()[pri:0, instance:XCarTest.loginMain@6440112d]" started-at="2024-04-17T16:16:08 CEST" name="loging" finished-at="2024-04-17T16:16:12 CEST" duration-ms="4039" status="PASS">
+        <test-method signature="loging()[pri:0, instance:XCarTest.loginMain@6440112d]" started-at="2024-04-18T15:41:12 CEST" name="loging" finished-at="2024-04-18T15:41:16 CEST" duration-ms="4385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loging -->
       </class> <!-- XCarTest.loginMain -->
     </test> <!-- Login Page -->
-    <test started-at="2024-04-17T16:16:12 CEST" name="Login and Out" finished-at="2024-04-17T16:16:45 CEST" duration-ms="32365">
+    <test started-at="2024-04-18T15:41:16 CEST" name="Login and Out" finished-at="2024-04-18T15:41:47 CEST" duration-ms="31041">
       <class name="XCarTest.loginAndLogOut">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-17T16:16:12 CEST" name="setup" finished-at="2024-04-17T16:16:31 CEST" duration-ms="18487" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-18T15:41:16 CEST" name="setup" finished-at="2024-04-18T15:41:34 CEST" duration-ms="17457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logOut()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-17T16:16:31 CEST" name="logOut" finished-at="2024-04-17T16:16:44 CEST" duration-ms="13208" status="PASS">
+        <test-method signature="logOut()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-18T15:41:34 CEST" name="logOut" finished-at="2024-04-18T15:41:46 CEST" duration-ms="12838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logOut -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-17T16:16:44 CEST" name="tearDown" finished-at="2024-04-17T16:16:45 CEST" duration-ms="658" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.loginAndLogOut@710636b0]" started-at="2024-04-18T15:41:46 CEST" name="tearDown" finished-at="2024-04-18T15:41:47 CEST" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- XCarTest.loginAndLogOut -->
     </test> <!-- Login and Out -->
-    <test started-at="2024-04-17T16:16:45 CEST" name="How It Works" finished-at="2024-04-17T16:17:19 CEST" duration-ms="34567">
+    <test started-at="2024-04-18T15:41:47 CEST" name="How It Works" finished-at="2024-04-18T15:42:16 CEST" duration-ms="28989">
       <class name="XCarTest.howitWorks">
-        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-17T16:16:45 CEST" name="setup" finished-at="2024-04-17T16:17:01 CEST" duration-ms="16494" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-18T15:41:47 CEST" name="setup" finished-at="2024-04-18T15:42:04 CEST" duration-ms="16567" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="howitworks()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-17T16:17:01 CEST" name="howitworks" finished-at="2024-04-17T16:17:19 CEST" duration-ms="17538" status="PASS">
+        <test-method signature="howitworks()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-18T15:42:04 CEST" name="howitworks" finished-at="2024-04-18T15:42:16 CEST" duration-ms="11925" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- howitworks -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-17T16:17:19 CEST" name="tearDown" finished-at="2024-04-17T16:17:19 CEST" duration-ms="518" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:XCarTest.howitWorks@eadd4fb]" started-at="2024-04-18T15:42:16 CEST" name="tearDown" finished-at="2024-04-18T15:42:16 CEST" duration-ms="491" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

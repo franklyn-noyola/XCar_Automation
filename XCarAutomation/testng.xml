@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Xcar Test Automation">
+<suite name="Xcar Test Automation">    
 	<parameter name="deviceName" value="Redmi 13C" />
 	<parameter name="udid" value="192.168.1.138:5565" />
 	<parameter name="platformVersion" value="13" />
