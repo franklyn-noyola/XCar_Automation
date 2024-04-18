@@ -19,5 +19,15 @@
          <classes>
              <class name="XCarTest.howitWorks"/>
           </classes>
+     </test> <!-- Test -->
+     <test name="acercade">
+         <classes>
+             <class name="XCarTest.about"/>
+          </classes>
+     </test> <!-- Test -->	 
+     <test name="Contact">
+         <classes>
+             <class name="XCarTest.contact"/>
+          </classes>
      </test> <!-- Test -->	 
 </suite> <!-- Suite -->

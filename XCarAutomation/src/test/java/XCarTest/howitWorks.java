@@ -60,7 +60,7 @@ public class howitWorks extends settings{
 		try {
 			Thread.sleep(2000);	
 			settingMenu.click();
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 			howitwork = driver.findElement(By.xpath(howitworks));
 			howitwork.click();
 			Thread.sleep(2000);			

@@ -5,6 +5,27 @@
   <parameter name="udid" value="192.168.1.138:5565"/>
   <parameter name="deviceName" value="Redmi 13C"/>
   <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+  <test thread-count="5" name="Login Page(failed)">
+    <classes>
+      <class name="XCarTest.loginMain">
+        <methods>
+          <include name="setup"/>
+          <include name="loging"/>
+        </methods>
+      </class> <!-- XCarTest.loginMain -->
+    </classes>
+  </test> <!-- Login Page(failed) -->
+  <test thread-count="5" name="Login and Out(failed)">
+    <classes>
+      <class name="XCarTest.loginAndLogOut">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="logOut"/>
+        </methods>
+      </class> <!-- XCarTest.loginAndLogOut -->
+    </classes>
+  </test> <!-- Login and Out(failed) -->
   <test thread-count="5" name="How It Works(failed)">
     <classes>
       <class name="XCarTest.howitWorks">
@@ -16,4 +37,26 @@
       </class> <!-- XCarTest.howitWorks -->
     </classes>
   </test> <!-- How It Works(failed) -->
+  <test thread-count="5" name="acercade(failed)">
+    <classes>
+      <class name="XCarTest.about">
+        <methods>
+          <include name="tearDown"/>
+          <include name="about"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- XCarTest.about -->
+    </classes>
+  </test> <!-- acercade(failed) -->
+  <test thread-count="5" name="Contact(failed)">
+    <classes>
+      <class name="XCarTest.contact">
+        <methods>
+          <include name="contacts"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- XCarTest.contact -->
+    </classes>
+  </test> <!-- Contact(failed) -->
 </suite> <!-- Failed suite [Xcar Test Automation] -->
